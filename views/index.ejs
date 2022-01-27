@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+Ejs has the hability to execute javascript inside HTML <br>
+For that, you have to write <%= '<' %>%= 2+2 %<%= '>' %> <br>
+It will execute the code in javascript, the output is <%= 2+2 %> <br><br>
+In this case this file is receiving a json object that can be included <br>
+For that, use the name of the variable <%= '<' %> text <%= '>' %> <br>
+It will again execute the code in javascript, the output is <%= locals.text || 'Default' %> <br>
+I put local.text || 'Defaul' in case the varible text is empty
+
+
+</body>
+
+</html>
